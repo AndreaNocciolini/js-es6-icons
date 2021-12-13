@@ -117,6 +117,19 @@ console.log(icons)
 
 // Milestone 1
 // Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, in cui è presente il nome dell'icona e l'icona stessa.
+const container = document.getElementById(`container-main`)
+
+for (let i = 0; i < icons.length; i++) {
+	const element = icons[i];
+	const templateDiv = `
+	<div class="icon-container">
+		<div class="icon"><i class="${element.family} ${element.prefix}${element.name}"></i></div>
+		<div class="icon-title">${element.name}</div>
+	</div>
+	`
+	container.innerHTML += templateDiv
+
+}
 
 
 // Milestone 2
