@@ -177,33 +177,36 @@ filter.addEventListener(`change`, function(){
 			})
 			break;
 		case `animals`:
+			const colorAnimals = Math.floor(Math.random()*16777215).toString(16)
 			container.innerHTML = ``
 			animals.forEach(element => {
 				container.innerHTML += `
 			<div class="icon-container">
-				<div class="icon"><i class="${element.family} ${element.prefix}${element.name}" style="color: ${element.color}"></i></div>
+				<div class="icon"><i class="${element.family} ${element.prefix}${element.name}" style="color: #${colorAnimals}"></i></div>
 				<div class="icon-title">${element.name}</div>
 			</div>
 			`
 			})
 			break;
 		case `vegetables`:
+			const colorVegetables = Math.floor(Math.random()*16777215).toString(16)
 			container.innerHTML = ``
 			vegetables.forEach(element => {
 				container.innerHTML += `
 			<div class="icon-container">
-				<div class="icon"><i class="${element.family} ${element.prefix}${element.name}" style="color: ${element.color}"></i></div>
+				<div class="icon"><i class="${element.family} ${element.prefix}${element.name}" style="color: #${colorVegetables}"></i></div>
 				<div class="icon-title">${element.name}</div>
 			</div>
 			`
 			})
 			break;
 		case `users`:
+			const colorUsers = Math.floor(Math.random()*16777215).toString(16)
 			container.innerHTML = ``
 			users.forEach(element => {
 				container.innerHTML += `
 			<div class="icon-container">
-				<div class="icon"><i class="${element.family} ${element.prefix}${element.name}" style="color: ${element.color}"></i></div>
+				<div class="icon"><i class="${element.family} ${element.prefix}${element.name}" style="color: #${colorUsers}"></i></div>
 				<div class="icon-title">${element.name}</div>
 			</div>
 			`
